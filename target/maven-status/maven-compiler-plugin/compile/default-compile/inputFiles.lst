@@ -1,0 +1,7 @@
+/workspaces/meustickets-api/src/main/java/com/meustickets/meusticketsapi/servicos/IPessoaServico.java
+/workspaces/meustickets-api/src/main/java/com/meustickets/meusticketsapi/modelos/Pessoa.java
+/workspaces/meustickets-api/src/main/java/com/meustickets/meusticketsapi/configuracoes/SpringFoxConfig.java
+/workspaces/meustickets-api/src/main/java/com/meustickets/meusticketsapi/controllers/PessoaController.java
+/workspaces/meustickets-api/src/main/java/com/meustickets/meusticketsapi/MeusticketsApiApplication.java
+/workspaces/meustickets-api/src/main/java/com/meustickets/meusticketsapi/repositorys/PessoaRepository.java
+/workspaces/meustickets-api/src/main/java/com/meustickets/meusticketsapi/servicos/PessoaServico.java
