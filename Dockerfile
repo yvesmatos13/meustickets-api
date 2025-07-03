@@ -2,11 +2,12 @@
 FROM maven:3.9-eclipse-temurin-17 AS builder
 
 # Clone do repositório diretamente (se preferir, copie o projeto localmente)
-RUN git clone https://github.com/yvesmatos13/meustickets-api.git /app
 WORKDIR /app
 
+COPY . .
+
 # Faz o build do projeto (gera o .jar na pasta target)
-RUN mvn clean package -DskipTests
+RUN mvn clean install -DskipTests
 
 # Etapa 2: imagem leve só com o JAR
 FROM eclipse-temurin:17-jdk-alpine
@@ -15,7 +16,7 @@ FROM eclipse-temurin:17-jdk-alpine
 EXPOSE 8080
 
 # Copia o .jar gerado na imagem anterior
-COPY --from=builder /app/target/*.war /app/app.war
+COPY --from=builder /app/target/*.jar /app/app.jar
 
 # Define o comando para rodar o Spring Boot
-ENTRYPOINT ["java", "-jar", "/app/app.war"]
+ENTRYPOINT ["java", "-jar", "/app/app.jar"]
