@@ -1,7 +1,0 @@
-com/meustickets/meusticketsapi/repositorys/PessoaRepository.class
-com/meustickets/meusticketsapi/modelos/Pessoa.class
-com/meustickets/meusticketsapi/servicos/PessoaServico.class
-com/meustickets/meusticketsapi/MeusticketsApiApplication.class
-com/meustickets/meusticketsapi/configuracoes/SpringFoxConfig.class
-com/meustickets/meusticketsapi/servicos/IPessoaServico.class
-com/meustickets/meusticketsapi/controllers/PessoaController.class
